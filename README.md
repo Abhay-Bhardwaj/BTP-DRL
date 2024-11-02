@@ -49,26 +49,26 @@ The network can be run with a standard 2D laser, but this implementation uses a 
 
 Compile the workspace:
 ```shell
-$ cd ~/DRL-robot-navigation/catkin_ws
+cd ~/DRL-robot-navigation/catkin_ws
 ### Compile
-$ catkin_make_isolated
+catkin_make_isolated
 ```
 
 Open a terminal and set up sources:
 ```shell
-$ export ROS_HOSTNAME=localhost
-$ export ROS_MASTER_URI=http://localhost:11311
-$ export ROS_PORT_SIM=11311
-$ export GAZEBO_RESOURCE_PATH=~/DRL-robot-navigation/catkin_ws/src/multi_robot_scenario/launch
-$ source ~/.bashrc
-$ cd ~/DRL-robot-navigation/catkin_ws
-$ source devel_isolated/setup.bash
+export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_PORT_SIM=11311
+export GAZEBO_RESOURCE_PATH=~/DRL-robot-navigation/catkin_ws/src/multi_robot_scenario/launch
+source ~/.bashrc
+cd ~/DRL-robot-navigation/catkin_ws
+source devel_isolated/setup.bash
 ```
 
 Run the training:
 ```shell
-$ cd ~/DRL-robot-navigation/TD3
-$ python3 train_velodyne_td3.py
+cd ~/DRL-robot-navigation/TD3
+python3 train_velodyne_td3.py
 ```
 
 To check the training process on tensorboard:
